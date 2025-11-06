@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: flask-image-generator
+    env: python
+    region: oregon
+    plan: starter
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    envVars:
+      OPENROUTER_API_KEY:
+        sync: false
