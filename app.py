@@ -7,7 +7,7 @@ app = Flask(__name__)
 # change this to something secret in real testing env
 app.secret_key = "replace_this_with_a_random_secret"
 
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "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"
 FLAG = "ctf7{4cTu4L_0p3n4!_d3cod3}"
 
 # === Grandma trigger detection ===
@@ -128,3 +128,4 @@ def chat():
 
 if __name__ == "__main__":
     app.run(debug=True, host="127.0.0.1", port=5000)
+
